@@ -8,7 +8,7 @@ WAIT_TIME = 30 #seconds
 MAX_NO_ATTEMPTS = 5
 serverUUID = ""
 isVerbose = False
-ENDPOINT = "SERVER ENDPOINT"
+ENDPOINT = "https://cp.sd1.flexiant.net:4442/"
 
 #Login UUID/username/password
 customerUUID=""
@@ -235,7 +235,7 @@ def rest_list_resource(auth_parms, res_type, payload):
 #Method used to create the server and deploy it to the platform
 def create_server():
 
-    hostname = ""
+    hostname = "https://cp.sd1.flexiant.net:4442/"
 
     #Get token to authenticate the user
     token = getToken(hostname, username,
